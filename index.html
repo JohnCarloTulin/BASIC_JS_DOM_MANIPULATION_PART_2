@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity #2 - John Carlo Tulin</title>
+    <link rel = "stylesheet" href="bible.css">
+</head>
+<body>
+
+    <!-- Calling of method when button clicked -->
+    <button onclick="addDesign()">Add Design</button>
+    <button onclick="removeDesign()">Remove Design</button>
+
+    <!-- Banner -->
+    <div id="container" class="removed_Design">
+        <h2><i>Deuteronomy 31:6</i></h2>
+        <p>"Be strong and courageous. Do not fear or be in dread of them, 
+        for it is the Lord your God who goes with you. He will not leave you or forsake you."</p>
+    </div>
+
+    <!-- Add design and remove design method (Javascript)-->
+    <script>
+        function addDesign() {
+            let container = document.getElementById("container");
+            container.classList.remove("removed_Design");
+            container.classList.add("add_Design");
+        }
+
+        function removeDesign() {
+            let container = document.getElementById("container");
+            container.classList.remove("add_Design");
+            container.classList.add("removed_Design");
+        }
+    </script>
+
+</body>
+</html>
